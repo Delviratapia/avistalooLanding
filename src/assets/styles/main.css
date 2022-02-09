@@ -140,3 +140,28 @@ svg{
   max-width: 35px;
   max-height: 35px;
 }
+
+/*ScrollUp*/
+
+
+#toTopButton {
+  padding: 2px 7px 2px 7px;
+  border: solid 1px white;
+  border-radius: 5px;
+
+  background: #335963;
+  color: white;
+
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  transition: 0.3s;
+  z-index: 2000;
+
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+#toTopButton:hover {
+  transform: scale(1.1);
+}
