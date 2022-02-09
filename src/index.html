@@ -34,11 +34,11 @@
           <a href="/" class="block text-xl my-2 lg:inline-block text-center lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">Inicio</a>
           <a href="#Que-es" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">¿Qué es?</a>
           <a href="#Caracteristicas" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">Características</a>
-          <a href="https://www.avistaloo.com/wiki" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">Wiki</a>
+          <a href="https://app.avistaloo.com/wiki" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">Wiki</a>
         </div>
         <div class="flex flex-col lg:flex-row items-center justify-center lg:mb-0  mb-1">
-          <a href="https://www.avistaloo.com/login" class="block px-4 py-2 mb-0.5 text-center lg:mr-4 bg-white border border-primary-color text-primary-color transition duration-500 hover:scale-110 rounded-md">Iniciar Sesión</a>
-          <a href="https://www.avistaloo.com/registro" class="block px-4 py-2 mb-0.5 lg:mt-0 mt-1 text-center bg-primary-color border border-primary-color text-white transition duration-500 hover:scale-110 rounded-md">Registrarse</a>
+          <a href="https://app.avistaloo.com/login" class="block px-4 py-2 mb-0.5 text-center lg:mr-4 bg-white border border-primary-color text-primary-color transition duration-500 hover:scale-110 rounded-md">Iniciar Sesión</a>
+          <a href="https://app.avistaloo.com/registro" class="block px-4 py-2 mb-0.5 lg:mt-0 mt-1 text-center bg-primary-color border border-primary-color text-white transition duration-500 hover:scale-110 rounded-md">Registrarse</a>
         </div>
       </div>
     </nav>
@@ -51,7 +51,7 @@
             <h3 class="text-2xl mb-20 text-white">La web donde podrás subir tus avistamientos y compartirlos con la comunidad</h3>
             <div class="buttons-landing flex">
             <button class="unirse bg-white text-primary-color font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border border-white hover:text-white hover:bg-primary-color">
-              <a href="https://www.avistaloo.com/registro">UNIRSE AHORA</a>
+              <a href="https://app.avistaloo.com/registro">UNIRSE AHORA</a>
             </button>
             </div>
           </div>
@@ -59,9 +59,12 @@
     </header>
   
     <section class="container mx-auto px-6 py-10 text-primary-color text-center">
-      <h2 id="Que-es" class="text-4xl font-bold text-center mb-12">¿Qué es Avistaloo?</h2>
-      <p class="text-2xl mb-24">Avistaloo es la app ideal para avistar cualquier tipo de ave que esté por tu zona, compartir tus avistamientos, disfrutar de nuestra wiki y comentar los avistamientos de otros usuarios y mucho más.</p>
-      <h2 id="Caracteristicas" class="text-4xl font-bold text-center mb-10">Características</h2>
+      <div id="Que-es" class="pt-20">
+        <h2 class="text-4xl font-bold text-center mb-12">¿Qué es Avistaloo?</h2>
+        <p class="text-2xl mb-24">Avistaloo es la app ideal para avistar cualquier tipo de ave que esté por tu zona, compartir tus avistamientos, disfrutar de nuestra wiki y comentar los avistamientos de otros usuarios y mucho más.</p>
+      </div>
+      <div id="Caracteristicas" class="pt-20">
+        <h2 class="text-4xl font-bold text-center mb-10">Características</h2>
       <div class="flex items-center flex-wrap mb-20">
             <div class="w-full md:w-2/6 px-8">
               <img class="imgSection lg:w-80 lg:h-80 md:w-4/5 md:h-4/5 sm:w-3/5 sm:h-3/5" src="https://cdn-icons-png.flaticon.com/512/2196/2196168.png" alt="avista-aves">
@@ -128,7 +131,7 @@
               <div>
                 <a href="https://www.apple.com/es/app-store/">
                   <button>
-                    <img src="../assets/images/app_store.png">
+                    <img src="./assets/images/app_store.png">
                   </button>
                 </a>
                 <a href="https://play.google.com/store?hl=es&gl=US">
@@ -139,8 +142,16 @@
               </div>
             </div>
       </div>
+      </div>
+      
     </section>
-
+    <!-- ScrollUp -->
+    <div>
+      <button id="toTopButton" alt="Botón de vuelta al inicio">
+        <img src="./assets/images/scrollUp.svg" alt="Botón de vuelta al inicio" />
+      </button>
+    </div>
+    
     <footer class="flex flex-row justify-around items-center navxs:flex-col navsm:flex-col gap-y-6 gap-x-6 py-2 bg-primary-color">
     <div class="flex flex-row gap-x-3 mt-4 md:mt-0">
         <!-- Añadir los enlaces de las RRSS -->
@@ -162,9 +173,9 @@
       <p class="text-white text-sm mb-10">© 2022 Avistaloo</p>
     </div>
     <div class="flex flex-col items-center text-white font-medium mb-4 md:mb-0">
-      <a href="https://www.avistaloo.com/sobre-nosotros">¿Quiénes somos?</a>
-      <a href="https://www.avistaloo.com/politica-de-privacidad">Política de privacidad</a>
-      <a href="https://www.avistaloo.com/Contacto">Contáctanos</a>
+      <a href="https://app.avistaloo.com/sobre-nosotros">¿Quiénes somos?</a>
+      <a href="https://app.avistaloo.com/politica-de-privacidad">Política de privacidad</a>
+      <a href="https://app.avistaloo.com/Contacto">Contáctanos</a>
     </div>
     </footer>
     <script type="module" src="./main.js"></script>
