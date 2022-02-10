@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 /*BODY*/
 body {
@@ -164,4 +165,32 @@ svg{
 
 #toTopButton:hover {
   transform: scale(1.1);
+}
+
+/* FIX RESPONSIVE */
+
+@media(min-width:337px) {
+  .container {
+    max-width: 700px
+  }
+}
+@media (min-width:768px) {
+  .container {
+    max-width:1180px;
+  }
+}
+
+@media (max-width:768px) {
+  .explore-tab .container-text {
+    order:2
+  }
+  .explore-tab .container-img {
+    order:1
+  }
+  .imgSection {
+    width:60%;
+  }
+}
+.imgSection {
+  margin:0 auto;
 }
