@@ -166,3 +166,31 @@ svg{
 #toTopButton:hover {
   transform: scale(1.1);
 }
+
+/* FIX RESPONSIVE */
+
+@media(min-width:337px) {
+  .container {
+    max-width: 700px
+  }
+}
+@media (min-width:768px) {
+  .container {
+    max-width:1180px;
+  }
+}
+
+@media (max-width:768px) {
+  .explore-tab .container-text {
+    order:2
+  }
+  .explore-tab .container-img {
+    order:1
+  }
+  .imgSection {
+    width:60%;
+  }
+}
+.imgSection {
+  margin:0 auto;
+}
