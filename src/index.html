@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="./assets/styles/main.css" rel="stylesheet">
-    <script type="module" src="./main.js"></script>
+    
     <title>Portal del Avistador | Avistaloo</title>
   </head>
   <body class="background-color-bg">
@@ -32,8 +32,8 @@
         <hr class="lg:hidden">
         <div class="text-sm lg:flex-grow lg:mb-0 mb-1">
           <a href="/" class="block text-xl my-2 lg:inline-block text-center lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">Inicio</a>
-          <a id="secondLink" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">¿Qué es?</a>
-          <a id="thirdLink" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">Características</a>
+          <button id="secondLink" onclick="firstscroll()" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">¿Qué es?</button>
+          <button id="thirdLink" onclick="secondscroll()" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">Características</button>
           <a href="https://app.avistaloo.com/wiki" class="block text-xl my-2 lg:inline-block text-center mb-1 lg:mt-0 text-primary-color lg:mr-4 transition duration-500 hover:scale-110">Wiki</a>
         </div>
         <div class="flex flex-col lg:flex-row items-center justify-center lg:mb-0  mb-1">
@@ -55,9 +55,9 @@
           </div>
         </div>
     </header>
-
+    <div id="Que-es"></div>
     <section class="container mx-auto px-6 py-10 text-primary-color text-center">
-      <div id="Que-es" class="">
+      <div class="pt-10">
         <h2 class="text-4xl font-bold text-center mb-10">¿Qué es Avistaloo?</h2>
         <p class="text-2xl mb-12">Avistaloo es la app ideal para avistar cualquier tipo de ave que esté por tu zona, compartir tus avistamientos, disfrutar de nuestra wiki y comentar los avistamientos de otros usuarios y mucho más.</p>
       </div>
@@ -176,6 +176,6 @@
       <a href="https://app.avistaloo.com/Contacto">Contáctanos</a>
     </div>
     </footer>
-    <script type="module" src="./main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
