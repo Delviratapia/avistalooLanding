@@ -167,6 +167,9 @@ svg{
   transform: scale(1.1);
 }
 
+a{
+  cursor: pointer;
+}
 /* FIX RESPONSIVE */
 
 @media(min-width:337px) {
