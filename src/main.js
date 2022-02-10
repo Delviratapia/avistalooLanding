@@ -1,14 +1,13 @@
 /* NAVBAR */
 const content = document.querySelector('#Que-es');
 const secondContent = document.querySelector('#Caracteristicas');
-/*Scroll to Que-es*/
-function firstscroll(){
+
+document.querySelector('#secondLink').onclick = function() {
   content.scrollIntoView({behavior: 'smooth'});
-}
-function secondscroll(){
+};
+document.querySelector('#thirdLink').onclick = function() {
   secondContent.scrollIntoView({behavior: 'smooth'});
-}
-/*MOSTRAR MENU MOBILE*/
+};
 
 document.getElementById("nav-toggle").onclick = function() {
   document.getElementById("nav-content").classList.toggle("hidden");
