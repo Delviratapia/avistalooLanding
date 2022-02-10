@@ -4,11 +4,9 @@ const base = mode === "production" ? "/" + path.basename(process.cwd()) + "/" : 
 
 module.exports = {
   root: "src",
-  base,
-  mode,
-  publicDir: "../public",
+  mode: "production",
   build: {
-    outDir: "../dist",
-    assetsDir: "./"
+      outDir: "../dist",
+      assetsDir: "./"
   }
 };
